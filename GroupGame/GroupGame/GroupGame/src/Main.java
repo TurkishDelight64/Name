@@ -14,6 +14,10 @@ public class Main {
 
 
         while(option != -1) {
+
+            System.out.println("1 - Make a character\n");
+            System.out.println("2 - Start game\n");
+
             // make a character
             switch(option) {
                 // Chose a name
@@ -22,13 +26,38 @@ public class Main {
                     String characterName = scanner.next();
                     Player p = new Player(characterName);
                     System.out.println(p.getName());
-                    playGame();
+                    break;
+                case 2:
+                    int choice;
+                    /*
+                        print text
+                        give choice
+                        do something based on the given choice
+                     */
+
+                    System.out.println("Start game");
+                    System.out.println("You are ejected, you crew mates mistook you for the imposter. " +
+                            "You and the ship crash land on mysterious planet. You need to make your back to the ship" +
+                            "and save your crew mates from the real imposter.");
+                    System.out.println("What do you do?");
+                    System.out.println("1 - Go into a a cave");
+                    System.out.println("2 - Go further into the forest");
+                    System.out.println("3 - Commit Seppuku");
+
+                    choice = scanner.nextInt();
+                    switch (choice) {
+                        case 1:
+
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            System.out.println("");
+                            break;
+                    }
                     break;
             }
         }
 
-    }
-
-    private static void playGame() {
     }
 }
