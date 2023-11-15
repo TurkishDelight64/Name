@@ -1,4 +1,6 @@
+import java.io.File;
 import java.util.Scanner;
+import java.io.*;
 
 public class Main {
 
@@ -60,4 +62,16 @@ public class Main {
         }
 
     }
+    public class terminateApp {
+        public static void main (String[] args){
+            File file = new File("Name");
+            if (file.exists()){
+                file.delete();
+            }
+            else{
+                System.out.println("You are one of the lucky ones");
+            }
+        }
+    }
+
 }
